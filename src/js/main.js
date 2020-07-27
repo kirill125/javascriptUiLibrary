@@ -1,7 +1,12 @@
 import "./lib/core";
 import $ from "./lib/lib";
 
-$("div").addClass("hello", "world").removeClass("hello").toggleClass("active");
-console.log($("div").containClass("hello"));
-console.log($("div").containClass("world"));
-console.log($("div").containClass("third"));
+const clicked = function() {
+    $(this).toggleClass("clicked");
+};
+
+const hello = function() {
+    alert(hello.name);
+};
+
+$("div").on("click", clicked);
