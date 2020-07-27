@@ -19,3 +19,20 @@
 //     window.$ = $;
 // })();
 
+const $ = function(selector) {
+    return new $.prototype.init(selector);
+};
+
+$.prototype.init = function(selector) {
+    if(!selector) {
+        return this; // {} empty object
+    }
+    Object.assign(this, document.querySelectorAll(selector));
+    this.length = document.querySelectorAll(selector).length;
+    return this;
+};
+
+$.prototype.init.prototype = $.prototype; // У нового объекта, который возвращается в $.prototype.init будут те же методы, что и у прототипа $
+window.$ = $;
+
+export default $;

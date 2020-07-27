@@ -1,3 +1,4 @@
 import "./lib/core";
+import $ from "./lib/lib";
 
-$(".active").hide().show().hide();
+$("div").toggle().show();
