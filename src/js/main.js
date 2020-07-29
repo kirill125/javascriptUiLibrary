@@ -1,25 +1,28 @@
 import "./lib/core";
 import $ from "./lib/lib";
 
-const clicked = function() {
-    $(this).toggleClass("clicked");
-};
+// const clicked = function() {
+//     $(this).toggleClass("clicked");
+// };
 
-const hello = function() {
-    alert(hello.name);
-};
+// const hello = function() {
+//     alert(hello.name);
+// };
 
-$("div").on("click", clicked);
+// $("div").on("click", clicked);
 
-$(".active").html("Hello");
-console.log($(".active").html());
+// $(".active").html("Hello");
+// console.log($(".active").html());
 
-$("div").eq(1).toggleClass("eq");
+// $("div").eq(1).toggleClass("eq");
 
-$("div").click(function(){
-    console.log($(this).index());
-});
+// $("div").click(function(){
+//     console.log($(this).index());
+// });
 
-console.log($("div").eq(2).find(".more"));
-console.log($(".some").closest(".third"));
-console.log($(".more").eq(0).siblings());
+// console.log($("div").eq(2).find(".more"));
+// console.log($(".some").closest(".third"));
+// console.log($(".more").eq(0).siblings());
+
+// $(".third").fadeOut(2000);
+$(".third").fadeIn(2000);
