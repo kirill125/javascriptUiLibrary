@@ -1,28 +1,17 @@
 import "./lib/core";
 import $ from "./lib/lib";
 
-// const clicked = function() {
-//     $(this).toggleClass("clicked");
-// };
+$("#first").on("click", () => {
+    $("div").eq(1).fadeOut(800);
+});
 
-// const hello = function() {
-//     alert(hello.name);
-// };
+$("[data-count='second']").on("click", () => {
+    $("div").eq(2).fadeOut(800);
+});
 
-// $("div").on("click", clicked);
+$(".btn").eq(2).on("click", () => {
+    $(".mt-20").fadeOut(800);
+});
 
-// $(".active").html("Hello");
-// console.log($(".active").html());
 
-// $("div").eq(1).toggleClass("eq");
 
-// $("div").click(function(){
-//     console.log($(this).index());
-// });
-
-// console.log($("div").eq(2).find(".more"));
-// console.log($(".some").closest(".third"));
-// console.log($(".more").eq(0).siblings());
-
-// $(".third").fadeOut(2000);
-$(".third").fadeIn(2000);
