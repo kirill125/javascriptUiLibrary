@@ -21,3 +21,5 @@ $("div").click(function(){
 });
 
 console.log($("div").eq(2).find(".more"));
+console.log($(".some").closest(".third"));
+console.log($(".more").eq(0).siblings());
