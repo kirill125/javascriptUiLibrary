@@ -6,11 +6,11 @@ $("#first").on("click", () => {
 });
 
 $("[data-count='second']").on("click", () => {
-    $("div").eq(2).fadeOut(800);
+    $("div").eq(2).fadeToggle(800);
 });
 
 $(".btn").eq(2).on("click", () => {
-    $(".mt-20").fadeOut(800);
+    $(".mt-20").fadeToggle(800);
 });
 
 
